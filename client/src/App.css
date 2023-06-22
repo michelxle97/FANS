@@ -13,6 +13,15 @@
   }
 }
 
+.mask {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.brightness {
+  filter: brightness(0);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
