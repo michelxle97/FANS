@@ -17,6 +17,9 @@ const Navbar = () => {
                         <li class="nav-item">
                             <a class="nav-link" href="#">Guess That Pokemon</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Type Facts</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown
