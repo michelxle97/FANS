@@ -4,10 +4,10 @@ import './PokeHome.css';
 
 function PokeHome() {
 
-    return(
+    return (
         <div>
-            <PokeApiLogo/>
-            <PokeCarousel/>
+            <PokeApiLogo />
+            <PokeCarousel />
 
         </div>
     )
