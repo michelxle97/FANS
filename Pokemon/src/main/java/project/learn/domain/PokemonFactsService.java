@@ -19,5 +19,9 @@ public class PokemonFactsService {
         return repository.findByFactId(FactId);
     }
 
+    public  PokemonFacts findByTypeName (String factName) {
+        return repository.findByFactName(factName);
+    }
+
 
 }

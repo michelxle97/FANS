@@ -20,4 +20,9 @@ public class PokemonFactsController {
     public PokemonFacts findByFactId(@PathVariable int factId) {
         return service.findByFactId(factId);
     }
+
+    @GetMapping("/fact-type-name/{typeName}")
+    public PokemonFacts findByTypeName(@PathVariable String typeName) {
+        return service.findByTypeName(typeName);
+    }
 }

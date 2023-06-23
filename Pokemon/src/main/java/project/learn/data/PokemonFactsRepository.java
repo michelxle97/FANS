@@ -8,5 +8,6 @@ public interface PokemonFactsRepository {
     @Transactional
     PokemonFacts findByFactId(int factId);
 
-
+@Transactional
+    PokemonFacts findByFactName(String factName);
 }

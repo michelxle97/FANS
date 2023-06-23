@@ -32,5 +32,21 @@ public class PokemonFactsJdbcRepository implements PokemonFactsRepository{
         return pokemonFacts;
     }
 
+    @Override
+    public PokemonFacts findByFactName(String factName) {
+        final String sql = "select pokemon_facts.pokemon_fact_id, pokemon_facts.pokemon_fact, " +
+                "pokemon_facts.pokemon_type_id, pokemon_type.type_name " +
+                "from pokemon_facts " +
+                "join pokemon_type ON pokemon_facts.pokemon_type_id = pokemon_type.pokemon_type_id " +
+                "where pokemon_facts.pokemon_fact = ?";
+
+        PokemonFacts pokemonFacts = jdbcTemplate.query(sql, new PokemonFactsMapper(), factName)
+                .stream()
+                .findFirst()
+                .orElse(null);
+
+        return pokemonFacts;
+    }
+
 
 }
