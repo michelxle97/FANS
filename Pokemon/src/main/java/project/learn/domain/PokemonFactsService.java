@@ -2,6 +2,7 @@ package project.learn.domain;
 
 import org.springframework.stereotype.Service;
 import project.learn.data.PokemonFactsRepository;
+import project.learn.data.PokemonTypeRepository;
 import project.learn.models.PokemonFacts;
 import project.learn.models.PokemonType;
 
@@ -10,17 +11,21 @@ public class PokemonFactsService {
 
     private final PokemonFactsRepository repository;
 
+    private  final PokemonTypeRepository typeRepository;
 
-    public PokemonFactsService(PokemonFactsRepository repository) {
+
+    public PokemonFactsService(PokemonFactsRepository repository, PokemonTypeRepository typeRepository) {
         this.repository = repository;
+        this.typeRepository = typeRepository;
     }
 
     public PokemonFacts findByFactId(int FactId) {
         return repository.findByFactId(FactId);
     }
 
-    public  PokemonFacts findByTypeName (String factName) {
-        return repository.findByFactName(factName);
+    public PokemonType findByTypeName (String typeName) {
+        PokemonType pokemonType = typeRepository.findByType(typeName);
+        return pokemonType;
     }
 
 

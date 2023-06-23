@@ -22,7 +22,7 @@ public class PokemonFactsController {
     }
 
     @GetMapping("/fact-type-name/{typeName}")
-    public PokemonFacts findByTypeName(@PathVariable String typeName) {
+    public PokemonType findByTypeName(@PathVariable String typeName) {
         return service.findByTypeName(typeName);
     }
 }

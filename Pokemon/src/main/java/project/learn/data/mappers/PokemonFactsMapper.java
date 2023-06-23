@@ -20,6 +20,7 @@ public class PokemonFactsMapper implements RowMapper<PokemonFacts> {
 
         PokemonType pokemonType = new PokemonType();
         pokemonType.setId(rs.getInt("pokemon_type_id"));
+        pokemonType.setName(rs.getString("type_name"));
 
         pokemonFacts.setTypeId(pokemonType.getId());
 
