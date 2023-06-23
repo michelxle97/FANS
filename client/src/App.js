@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PokemonDetails from './components/PokemonDetails';
 import PokeHome from './components/PokeHome';
 import PokemonCards from './components/Card';
+import PokemonTypeFacts from './components/PokemonTypeFacts';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Route path="/pokemon" element={<PokemonByType />} />
           <Route path="/pokemonDetails/:name" element={<PokemonDetails />} />
           <Route path="/pokemonCards" element={<PokemonCards/>}/>
-          <Route path="/pokemon/:name" element={<PokemonCards/>}/>
+          <Route path="/pokemon/:name" element={<PokemonTypeFacts/>}/>
         </Routes>
       </div>
     </Router>
