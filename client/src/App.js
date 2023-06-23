@@ -21,6 +21,7 @@ function App() {
           <Route path="/pokemon" element={<PokemonByType />} />
           <Route path="/pokemonDetails/:name" element={<PokemonDetails />} />
           <Route path="/pokemonCards" element={<PokemonCards/>}/>
+          <Route path="/pokemon/:name" element={<PokemonCards/>}/>
         </Routes>
       </div>
     </Router>

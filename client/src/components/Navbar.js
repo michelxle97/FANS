@@ -17,7 +17,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link"><Link to={'/pokemon'}>Pokemon List</Link></a>
-
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link"><Link to={'/pokemonCards'}>Pokemon Cards</Link></a>
                         </li>
                     </ul>
                 </div>
