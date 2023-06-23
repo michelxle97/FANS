@@ -4,4 +4,4 @@ GET {{url}}/2 HTTP/1.1
 
 ###
 
-GET {{/fact-type-name/url}}/normal HTTP/1.1
+GET http://localhost:8080/api/pokemon_fact/fact-type-name/Fire

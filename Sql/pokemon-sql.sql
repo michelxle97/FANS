@@ -66,7 +66,7 @@ insert into pokemon_type ( `type_name`, `type_description`) values
     ('Steel-type Pokémon are strong against Ice, Rock, and Fairy types, but weak against Fire, Fighting, and Ground types.',17),
     ('Fairy-type Pokémon are strong against Fighting, Dragon, and Dark types, but weak against Poison and Steel types.',18);
     
-    
+    use pokemon;
     select * from pokemon_type;
     select * from pokemon;
   
