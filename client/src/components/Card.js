@@ -15,8 +15,14 @@ const PokemonCard = ({ name }) => {
     }
   };
 
+  const getTypeColor = () => {
+    let temp = name + " pokemon-card";
+    console.log(temp);
+    return temp;
+  }
+
   return (
-    <div className="pokemon-card">
+    <div className={getTypeColor()}>
       <p>{name}</p>
       <Link to={`/pokemon/${name}`} className="pokemon-facts-link" onClick={handleClick}>
         Facts about this type of Pokémon

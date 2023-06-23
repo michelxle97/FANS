@@ -2,6 +2,8 @@ import { getPokemonById } from "../services/pokemonApiV2";
 import { useState, useEffect } from "react";
 import { useParams, Link, useLocation } from 'react-router-dom';
 import { getTypeInfo, getTypeDescription } from "../services/pokemonFactService";
+import './PokemonTypeFacts.css'
+
 function PokemonTypeFacts () {
 
     // const [selectedType, setSelectedType] = useState('');
@@ -28,7 +30,7 @@ function PokemonTypeFacts () {
     }, [name])
 
     return(
-        <div>
+        <div className="inner">
             <h1>{name}</h1>
             <p>{typeInfo.description}</p>
             <p>{typeDescription}</p>

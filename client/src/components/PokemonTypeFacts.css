@@ -1,0 +1,10 @@
+.inner {
+    color: white;
+    width: auto;
+    height: auto;
+    margin: 10rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}

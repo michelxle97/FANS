@@ -31,7 +31,7 @@ const PokemonByType = () => {
 
     return (
         <div className='container mt-5'>
-            <h3>Pokemon List</h3>
+            <h3 style={{color: 'white'}}>Pokemon List</h3>
             <select value={selectedType} onChange={handleTypeChange}>
                 <option value="">Select a type</option>
                 <option value="1">Normal</option>
