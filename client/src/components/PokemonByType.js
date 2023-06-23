@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { getPokemonByType } from "../services/pokemonApiV2";
 
 const PokemonByType = () => {
@@ -29,7 +30,7 @@ const PokemonByType = () => {
     }
 
     return (
-        <div className='container'>
+        <div className='container mt-5'>
             <h3>Pokemon List</h3>
             <select value={selectedType} onChange={handleTypeChange}>
                 <option value="">Select a type</option>
@@ -59,11 +60,11 @@ const PokemonByType = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {pokemonList.map((pokemon) => (
+                    {pokemonList.sort().map((pokemon) => (
                         <tr key={pokemon}>
-                            <td>{pokemon}</td>
+                            <td>{pokemon.charAt(0).toUpperCase() + pokemon.slice(1)}</td>
                             <td>
-
+                                <Link to={`/pokemonDetails/${pokemon}`} className='btn btn-primary btn-sm'>View Details</Link>
                             </td>
                         </tr>
                     ))}

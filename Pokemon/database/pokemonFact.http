@@ -1,0 +1,7 @@
+@url = http://localhost:8080/api/pokemon_fact
+
+GET {{url}}/2 HTTP/1.1
+
+###
+
+GET {{/fact-type-name/url}}/normal HTTP/1.1

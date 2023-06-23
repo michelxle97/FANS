@@ -1,0 +1,34 @@
+.poke-img {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    color: black;
+}
+
+.center-carousel {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.carousel-inner img {
+    margin: auto;
+    color: black;
+    width: auto;
+    height: 35rem;
+  }
+
+.carousel-inner {
+    margin: auto;
+    color: black;
+}
+
+.carousel-background {
+    color: black;
+}
+
+h3 {
+    color: black;
+}
