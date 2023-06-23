@@ -1,4 +1,4 @@
-package project.learn.data;
+package project.learn.data.mappers;
 
 import project.learn.models.PokemonType;
 import org.springframework.jdbc.core.RowMapper;

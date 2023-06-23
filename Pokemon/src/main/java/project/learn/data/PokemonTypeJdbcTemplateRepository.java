@@ -2,6 +2,7 @@ package project.learn.data;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import project.learn.data.mappers.PokemonTypeMapper;
 import project.learn.models.PokemonType;
 @Repository
 public class PokemonTypeJdbcTemplateRepository implements  PokemonTypeRepository{
