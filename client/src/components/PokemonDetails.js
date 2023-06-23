@@ -31,11 +31,11 @@ const PokemonDetails = () => {
 
     return (
         <div className='container' id='container'>
-            <h3>{name.charAt(0).toUpperCase() + name.slice(1)}</h3>
-            <p>Weight: {weight}</p>
-            <p>Height in decimeters: {height} </p>
-            <p>Base XP: {base_experience}</p>
-            <p>Type(s): {pokemonDetails.types.map((type) => type.type.name + " | ")}</p>
+            <h3 className='pokemon-details'>{name.charAt(0).toUpperCase() + name.slice(1)}</h3>
+            <p className='pokemon-details'>Weight: {weight}</p>
+            <p className='pokemon-details'>Height in decimeters: {height} </p>
+            <p className='pokemon-details'>Base XP: {base_experience}</p>
+            <p className='pokemon-details'>Type(s): {pokemonDetails.types.map((type) => type.type.name + " | ")}</p>
 
             <img src={sprites.front_default} alt={name} />
             <img src={sprites.back_default} alt={name} />
