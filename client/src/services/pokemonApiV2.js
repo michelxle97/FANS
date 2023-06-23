@@ -33,3 +33,4 @@ export async function getPokemonByType(typeId) {
     return Promise.reject('Pokemon not found');
   }
 }
+

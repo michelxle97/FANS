@@ -1,7 +1,7 @@
 import { getPokemonById } from "../services/pokemonApiV2";
 import { useState, useEffect } from "react";
 import { useParams, Link, useLocation } from 'react-router-dom';
-import { getTypeInfo, getTypeDescription } from "../services/pokemonSpringApi";
+import { getTypeInfo, getTypeDescription } from "../services/pokemonFactService";
 function PokemonTypeFacts () {
 
     // const [selectedType, setSelectedType] = useState('');
@@ -17,6 +17,7 @@ function PokemonTypeFacts () {
         getTypeInfo(name)
             .then(data => {
                 setTypeInfo(data);
+                console.log(data);
                 getTypeDescription(data.id)
                     .then(dat => {
                         console.log(dat);
